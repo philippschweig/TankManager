@@ -1,0 +1,35 @@
+﻿<Application
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+	xmlns:local="clr-namespace:TankManager.Lokalisierung"
+	xmlns:helper="clr-namespace:TankManager.Helper"
+	x:Class="TankManager.App">
+
+    <!--Anwendungsressourcen-->
+	<Application.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="/EFSframeworkelements;component/Styles.xaml"/>
+				<ResourceDictionary Source="Styles/TankManagerStyle.xaml"/>
+			</ResourceDictionary.MergedDictionaries>
+			
+			<local:LanguageProvider x:Key="Translation"/>
+			<helper:XamlHelper x:Key="Eigenschaften" />
+			<helper:StringFormatter x:Key="Formatter"/>
+			<helper:UnitFormatter x:Key="UnitFormatter"/>
+			<helper:PictureSelector x:Key="PictureSelector"/>
+		</ResourceDictionary>
+	</Application.Resources>
+
+	<Application.ApplicationLifetimeObjects>
+        <!--Erforderliches Objekt, das Lebensdauerereignisse der Anwendung behandelt-->
+		<shell:PhoneApplicationService 
+			Launching="Application_Launching" Closing="Application_Closing" 
+			Activated="Application_Activated" Deactivated="Application_Deactivated"/>
+    </Application.ApplicationLifetimeObjects>
+
+</Application>

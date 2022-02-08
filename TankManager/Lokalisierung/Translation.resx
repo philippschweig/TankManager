@@ -1,0 +1,567 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="FahrzeugAddViewCounterText" xml:space="preserve">
+    <value>Tageskilometer als Zähler</value>
+  </data>
+  <data name="FahrzeugAddViewTitle" xml:space="preserve">
+    <value>Fahrzeug hinzufügen</value>
+  </data>
+  <data name="DicAverageFuelConsumption" xml:space="preserve">
+    <value>Durchschnittsverbrauch</value>
+  </data>
+  <data name="DicEdit" xml:space="preserve">
+    <value>Ändern</value>
+  </data>
+  <data name="DicConsuption" xml:space="preserve">
+    <value>Verbrauch</value>
+  </data>
+  <data name="DicBillValue" xml:space="preserve">
+    <value>Rechnungsbetrag</value>
+  </data>
+  <data name="DicDate" xml:space="preserve">
+    <value>Datum</value>
+  </data>
+  <data name="DicDeveloper" xml:space="preserve">
+    <value>Entwicklung</value>
+  </data>
+  <data name="DicDistance" xml:space="preserve">
+    <value>Distanz</value>
+  </data>
+  <data name="DicFueled" xml:space="preserve">
+    <value>Spritmenge</value>
+  </data>
+  <data name="DicFuelHistoryCount" xml:space="preserve">
+    <value>Gesamtzahl an Tankvorgängen</value>
+  </data>
+  <data name="DicFullyFuelling" xml:space="preserve">
+    <value>Vollbetankung</value>
+  </data>
+  <data name="DicGasType" xml:space="preserve">
+    <value>Kraftstoffart</value>
+  </data>
+  <data name="DicHighestConsuption" xml:space="preserve">
+    <value>Höchster Verbrauch</value>
+  </data>
+  <data name="DicLastUpdate" xml:space="preserve">
+    <value>Aktualisiert</value>
+  </data>
+  <data name="DicLicensePlate" xml:space="preserve">
+    <value>Kennzeichen</value>
+  </data>
+  <data name="DicLowestConsuption" xml:space="preserve">
+    <value>Niedrigster Verbrauch</value>
+  </data>
+  <data name="DicName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="DicNext" xml:space="preserve">
+    <value>Weiter</value>
+  </data>
+  <data name="DicSave" xml:space="preserve">
+    <value>Speichern</value>
+  </data>
+  <data name="DicVersion" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="EinstellungenViewCarManagePivotTitle" xml:space="preserve">
+    <value>Fahrzeuge</value>
+  </data>
+  <data name="EinstellungenViewGeneralPivotTitle" xml:space="preserve">
+    <value>Allgemein</value>
+  </data>
+  <data name="EinstellungenViewLengthCounter" xml:space="preserve">
+    <value>Kilometerzähler beim Tanken</value>
+  </data>
+  <data name="EintellungenViewLogEntry" xml:space="preserve">
+    <value>Software-Logs anzeigen</value>
+  </data>
+  <data name="EnumKilometerzaeherAutomatic" xml:space="preserve">
+    <value>Automatisch</value>
+  </data>
+  <data name="EnumKilometerzaeherIndividual" xml:space="preserve">
+    <value>Individuell</value>
+  </data>
+  <data name="InfoViewTitle" xml:space="preserve">
+    <value>Informationen</value>
+  </data>
+  <data name="MainPageAppBarMenuItemSettings" xml:space="preserve">
+    <value>Einstellungen</value>
+  </data>
+  <data name="MainPageDataAnalysisPivotTitle" xml:space="preserve">
+    <value>Auswertung</value>
+  </data>
+  <data name="MainPageFuelLogPivotTitle" xml:space="preserve">
+    <value>Aktuell</value>
+  </data>
+  <data name="MainPageNoContentContent" xml:space="preserve">
+    <value>Es sind keine Daten vohanden oder es ist kein Fahrzeug ausgewählt. Gehen Sie zu den Einstellungen und wählen Sie unter Fahrzeuge eines aus oder klicken Sie auf (+) um eines zu erstellen.</value>
+  </data>
+  <data name="MainPageNoContentHeader" xml:space="preserve">
+    <value>Kein Fahrzeug vorhanden</value>
+  </data>
+  <data name="MainPageOverviewPivotTitle" xml:space="preserve">
+    <value>Übersicht</value>
+  </data>
+  <data name="MessageBoxApplicationUnhandeldException" xml:space="preserve">
+    <value>Ein unerwarteter Fehler ist aufgetreten.
+Die Application wird beendet.</value>
+  </data>
+  <data name="MessageBoxCheckDataContent" xml:space="preserve">
+    <value>Nicht alle Angaben sind korrekt bzw. angegeben.
+Bitte kontrollieren Sie folgende Elemente:</value>
+  </data>
+  <data name="MessageBoxCurrentVehicleDelContent" xml:space="preserve">
+    <value>Sie sind dabei Ihr aktuelles Fahrzeug unwiderruflich zu löschen. Wollen Sie fortfahren?</value>
+  </data>
+  <data name="MessageBoxCurrentVehicleDelHeader" xml:space="preserve">
+    <value>Aktuelles Fahrzeug löschen</value>
+  </data>
+  <data name="MessageBoxFirstFuellingContent" xml:space="preserve">
+    <value>Da Sie zum ersten Mal tanken, muss bei diesem Tankvorgang die Gesamtkilometerzahl angegeben werden.</value>
+  </data>
+  <data name="MessageBoxFirstFuellingHeader" xml:space="preserve">
+    <value>Das erste Mal Tanken</value>
+  </data>
+  <data name="MessageBoxVehicleChangedContent" xml:space="preserve">
+    <value>{0} ausgewählt</value>
+  </data>
+  <data name="MessageBoxVehicleChangedHeader" xml:space="preserve">
+    <value>Fahrzeug gewechselt</value>
+  </data>
+  <data name="MessageBoxVehicleDelContent" xml:space="preserve">
+    <value>{0} wurde gelöscht</value>
+  </data>
+  <data name="MessageBoxVehicleDelHeader" xml:space="preserve">
+    <value>Fahrzeug gelöscht</value>
+  </data>
+  <data name="TankenAddViewTitle" xml:space="preserve">
+    <value>Tanken</value>
+  </data>
+  <data name="ToggleSwitchNo" xml:space="preserve">
+    <value>Nein</value>
+  </data>
+  <data name="ToggleSwitchOff" xml:space="preserve">
+    <value>Aus</value>
+  </data>
+  <data name="ToggleSwitchOn" xml:space="preserve">
+    <value>An</value>
+  </data>
+  <data name="ToggleSwitchYes" xml:space="preserve">
+    <value>Ja</value>
+  </data>
+  <data name="UnitSystemConsuption" xml:space="preserve">
+    <value>l/100 km</value>
+  </data>
+  <data name="UnitSystemDriveLength" xml:space="preserve">
+    <value>Tageskilometerstand</value>
+  </data>
+  <data name="UnitSystemDriveTotalLength" xml:space="preserve">
+    <value>Gesamtkilometerstand</value>
+  </data>
+  <data name="UnitSystemLength" xml:space="preserve">
+    <value>Kilometer</value>
+  </data>
+  <data name="UnitSystemLengthShort" xml:space="preserve">
+    <value>km</value>
+  </data>
+  <data name="UnitSystemTemperature" xml:space="preserve">
+    <value>Grad Celsius</value>
+  </data>
+  <data name="UnitSystemTemperatureShort" xml:space="preserve">
+    <value>°C</value>
+  </data>
+  <data name="UnitSystemVolume" xml:space="preserve">
+    <value>Spritmenge</value>
+  </data>
+  <data name="UnitSystemVolumeShort" xml:space="preserve">
+    <value>l</value>
+  </data>
+  <data name="DicConnect" xml:space="preserve">
+    <value>Verbinden</value>
+  </data>
+  <data name="DicConnected" xml:space="preserve">
+    <value>Verbunden</value>
+  </data>
+  <data name="DicDisconnect" xml:space="preserve">
+    <value>Trennen</value>
+  </data>
+  <data name="EinstellungenViewBackupConnectInfo" xml:space="preserve">
+    <value>Sie sind eingeloggt.</value>
+  </data>
+  <data name="EinstellungenViewBackupInfo" xml:space="preserve">
+    <value>Hier können Sie die Daten der Anwendung, d.h. Ihre gesamten Fahrzeuge, Einstellungen, etc. in Ihrem SkyDrive sichern und von dort auch wiederherstellen.</value>
+  </data>
+  <data name="EinstellungenViewBackupLoadFromSkyDrive" xml:space="preserve">
+    <value>Von SkyDrive wiederherstellen</value>
+  </data>
+  <data name="EinstellungenViewBackupSaveToSkyDrive" xml:space="preserve">
+    <value>Auf SkyDrive sichern</value>
+  </data>
+  <data name="MessageBoxLiveConnectFailed1Content" xml:space="preserve">
+    <value>Es konnte keine Verbindung zu den Live-Diensten hergestellt werden.</value>
+  </data>
+  <data name="MessageBoxLiveConnectFailed2Content" xml:space="preserve">
+    <value>Es ist ein Fehler bei der Anmeldung aufgetreten.</value>
+  </data>
+  <data name="MessageBoxLiveConnectFailed3Content" xml:space="preserve">
+    <value>Es ist ein Fehler in der Live API aufgetreten.
+Bitte Entschuldigen Sie dies.</value>
+  </data>
+  <data name="DicNoInternetConnection" xml:space="preserve">
+    <value>Keine Internetverbindung</value>
+  </data>
+  <data name="MessageBoxLiveConnectFailed1ContentReason" xml:space="preserve">
+    <value>Es konnte keine Verbindung zu den Live-Diensten hergestellt werden.
+Mögliche Gründe:
+{0}</value>
+  </data>
+  <data name="MessageBoxLiveConnectFailedReasonNoConnection" xml:space="preserve">
+    <value>Keine Internetverbindung vorhanden</value>
+  </data>
+  <data name="MessageBoxLiveConnectFailedReasonUserGranting" xml:space="preserve">
+    <value>Application hat keine Rechte enthalten</value>
+  </data>
+  <data name="MessageBoxSkyDriveBackupFailed" xml:space="preserve">
+    <value>Ihre Daten konnten nicht auf SkyDrive gesichert werden.
+Möglicherweise bestand keine Internetverbindung, versuchen Sie es bei bestehender Internetverbindung erneut.
+Bei wiederholtem auftreten und bestehender Internetverbindung setzten Sie sich bitte mit uns in Verbindung.</value>
+  </data>
+  <data name="MessageBoxSkyDriveBackupSuccess" xml:space="preserve">
+    <value>Ihre Daten wurden auf SkyDrive gesichert.</value>
+  </data>
+  <data name="DicLegitimation" xml:space="preserve">
+    <value>Berechtigung</value>
+  </data>
+  <data name="MessageBoxSkyDriveRestoreFailed" xml:space="preserve">
+    <value>Es ist ein Fehler beim herunterladen Ihrer Sicherung aufgetreten.</value>
+  </data>
+  <data name="MessageBoxSkyDriveRestoreFailedNotExist" xml:space="preserve">
+    <value>Es ist ein Fehler bei der Wiederherstellung aufgetreten.
+Auf Ihrem SkyDrive ist kein Backup vorhanden.</value>
+  </data>
+  <data name="MessageBoxSkyDriveRestoreLegitimate" xml:space="preserve">
+    <value>Sind Sie sicher, dass Sie Ihre lokalen Daten mit dem SkyDrive Backup überschreiben wollen?
+Ihre aktuellen Daten gehen verloren!</value>
+  </data>
+  <data name="MessageBoxSkyDriveRestoreSuccess" xml:space="preserve">
+    <value>Ihre Daten wurden von SkyDrive wiederhergestellt.</value>
+  </data>
+  <data name="TanktabelleViewTitle" xml:space="preserve">
+    <value>Tankbuchübersicht</value>
+  </data>
+  <data name="DicCanister" xml:space="preserve">
+    <value>Kanister</value>
+  </data>
+  <data name="DicPetrolPump" xml:space="preserve">
+    <value>Zapfsäule</value>
+  </data>
+  <data name="MessageBoxDateChangedFailedContent" xml:space="preserve">
+    <value>Das Datum darf nicht älter sein, als das Datum des letzten Tankvorganges</value>
+  </data>
+  <data name="MessageBoxDateChangedFailedHeader" xml:space="preserve">
+    <value>Falsches Datum</value>
+  </data>
+  <data name="DicEmail" xml:space="preserve">
+    <value>E-Mail</value>
+  </data>
+  <data name="InfoViewAbout" xml:space="preserve">
+    <value>Über</value>
+  </data>
+  <data name="InfoViewDiagnostic" xml:space="preserve">
+    <value>Leistungsdiagnose</value>
+  </data>
+  <data name="InfoViewFeedback" xml:space="preserve">
+    <value>Feedback</value>
+  </data>
+  <data name="DicSendOff" xml:space="preserve">
+    <value>Absenden</value>
+  </data>
+  <data name="EinstellungenViewLastBackup" xml:space="preserve">
+    <value>Zuletzt gesichert am</value>
+  </data>
+  <data name="FahrzeugAddViewPivotExtras" xml:space="preserve">
+    <value>Extras</value>
+  </data>
+  <data name="FahrzeugAddViewPivotGeneral" xml:space="preserve">
+    <value>Allgemein</value>
+  </data>
+  <data name="MessageBoxDeleteAllVehiclesContent" xml:space="preserve">
+    <value>Sie sind dabei alle Fahrzeuge unwiderruflich zu löschen.
+Wollen Sie fortfahren?</value>
+  </data>
+  <data name="MessageBoxDeleteAllVehiclesHeader" xml:space="preserve">
+    <value>Alle Fahrzeuge löschen</value>
+  </data>
+  <data name="DicDelete" xml:space="preserve">
+    <value>Löschen</value>
+  </data>
+  <data name="FahrzeugEditViewTitle" xml:space="preserve">
+    <value>Fahrzeug ändern</value>
+  </data>
+  <data name="EinstellungenViewShowVehicleEditButton_Header" xml:space="preserve">
+    <value>Fahrzeug Beabeiten-Button</value>
+  </data>
+  <data name="EinstellungenViewShowVehicleEditButton_Info" xml:space="preserve">
+    <value>Es wird ein Button neben dem Fahrzeugkennzeichen in der Übersicht angezeigt.</value>
+  </data>
+  <data name="TankbuchViewNoContent_Content" xml:space="preserve">
+    <value>Fügen Sie durch Klicken auf das Tanksäulen-Symbol Tankvorgänge hinzu.</value>
+  </data>
+  <data name="TankbuchViewNoContent_Header" xml:space="preserve">
+    <value>Keine Daten vorhanden</value>
+  </data>
+  <data name="TankbuchViewTitle" xml:space="preserve">
+    <value>Tankbuch</value>
+  </data>
+  <data name="DicBillValueBreak" xml:space="preserve">
+    <value>Rechnungs-betrag</value>
+  </data>
+  <data name="DicFilledUp" xml:space="preserve">
+    <value>Vollgetankt</value>
+  </data>
+  <data name="DicFilledUpBreak" xml:space="preserve">
+    <value>Voll-getankt</value>
+  </data>
+  <data name="UnitSystemDriveTotalLengthBreak" xml:space="preserve">
+    <value>Tachostand</value>
+  </data>
+  <data name="DicFrom" xml:space="preserve">
+    <value>Vom</value>
+  </data>
+  <data name="DicTo" xml:space="preserve">
+    <value>Bis</value>
+  </data>
+  <data name="DicSupport" xml:space="preserve">
+    <value>Support</value>
+  </data>
+  <data name="EinstellungenViewShowExitMessage" xml:space="preserve">
+    <value>Vor dem Beenden fragen</value>
+  </data>
+  <data name="InfoViewCredits" xml:space="preserve">
+    <value>Impressum</value>
+  </data>
+  <data name="InfoViewHistory" xml:space="preserve">
+    <value>Versionen</value>
+  </data>
+  <data name="MessageBoxDeleteCompleteFuellog_Content" xml:space="preserve">
+    <value>Sie sind dabei Ihr gesamtes Tankbuch für das Fahrzeug mit dem Kennzeichen {0} ({1}) unwiderruflich zu löschen. Sofern Sie kein Backup auf SkyDrive haben, können Sie das nicht rückgängig machen. Es gehen alle Statistiken für dieses Fahrzeug verloren!
+Wollen Sie wirklich fortfahren?</value>
+  </data>
+  <data name="MessageBoxDeleteCompleteFuellog_Header" xml:space="preserve">
+    <value>Tankbuch löschen (Achtung!)</value>
+  </data>
+  <data name="MessageBoxExit_Content" xml:space="preserve">
+    <value>Wollen Sie die Anwendung wirklich beenden?</value>
+  </data>
+  <data name="MessageBoxExit_Header" xml:space="preserve">
+    <value>Anwendung beenden</value>
+  </data>
+  <data name="TankbuchViewDeleteAll" xml:space="preserve">
+    <value>Alle Einträge löschen</value>
+  </data>
+  <data name="MessageBoxTankbuchViewDTPickerFrom" xml:space="preserve">
+    <value>Das Datum muss gleich oder unter dem {0} sein.</value>
+  </data>
+  <data name="MessageBoxTankbuchViewDTPickerTo" xml:space="preserve">
+    <value>Das Datum muss gleich oder über dem {0} sein.</value>
+  </data>
+  <data name="HelpViewTitle" xml:space="preserve">
+    <value>Hilfe</value>
+  </data>
+  <data name="MessageBoxDeleteRefuelingLastOne_Content" xml:space="preserve">
+    <value>Sie sind dabei den letzten Tankvorgang vom {0} ({1}) zu löschen.
+Wollen Sie forfahren?</value>
+  </data>
+  <data name="MessageBoxDeleteRefuelingLastOne_Header" xml:space="preserve">
+    <value>Letzten Tankvorgang löschen</value>
+  </data>
+  <data name="TankenEditViewTitle" xml:space="preserve">
+    <value>Tankvorgang ändern</value>
+  </data>
+  <data name="MessageBoxDeleteRefueling_Content" xml:space="preserve">
+    <value>Sie sind dabei den Tankvorgang vom {0} ({1}) zu löschen.
+Wollen Sie forfahren?</value>
+  </data>
+  <data name="MessageBoxDeleteRefueling_Header" xml:space="preserve">
+    <value>Tankvorgang löschen</value>
+  </data>
+  <data name="MessageBoxTankenEditViewDateTimeFault_Content" xml:space="preserve">
+    <value>Das Datum muss zwischen dem vorherigen und nachfolgenden Tankvorgang liegen.</value>
+  </data>
+  <data name="MessageBoxTankenEditViewDateTimeFault_Header" xml:space="preserve">
+    <value>Falsche Datumsangabe</value>
+  </data>
+  <data name="DicCreated" xml:space="preserve">
+    <value>Erstellt</value>
+  </data>
+  <data name="DicTotalCosts" xml:space="preserve">
+    <value>Gesamtkosten</value>
+  </data>
+  <data name="InfoUCText" xml:space="preserve">
+    <value>Automatisch:
+Beim Tanken wird automatisch der Kilometerzähler gewählt.
+
+Individuell:
+Beim Tanken kann man den Kilometerzähler individuell wählen.</value>
+  </data>
+  <data name="DicRefresh" xml:space="preserve">
+    <value>Aktualisieren</value>
+  </data>
+  <data name="DicRateReview" xml:space="preserve">
+    <value>Bewertung abgeben</value>
+  </data>
+  <data name="AboutText" xml:space="preserve">
+    <value>EFSdeveloping ist ein Freizeitprojekt von mir, ErdnussFlipS bzw. mein richtiger Name ist Philipp. Ich studiere Informatik, weshalb ich auch nicht täglich bzw. in regelmäßigen Abständen an der Anwendung (App) arbeiten kann.</value>
+  </data>
+  <data name="AboutText_Header" xml:space="preserve">
+    <value>Was bzw. wer steckt hinter EFSdeveloping?</value>
+  </data>
+  <data name="DicConsuptionAverage" xml:space="preserve">
+    <value>Verbrauch auf 100km</value>
+  </data>
+  <data name="UpgradeContent" xml:space="preserve">
+    <value>Versionsgeschichte anzeigen?</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>Anwendung aktualisiert</value>
+  </data>
+  <data name="InfoViewDonation" xml:space="preserve">
+    <value>Spenden</value>
+  </data>
+  <data name="InfoViewDonationText" xml:space="preserve">
+    <value>Spenden Sie für den Erhalt und der Weiterentwicklung dieser Anwendung!
+
+Für den Erhalt dieser Anwendung im Windows Phone Store (Marketplace) ist jährlich eine Gebühr von 77 € nötig.
+
+Wenn Ihnen diese Anwendung gefällt, dann können Sie einen freiwilligen Betrag zur Kostendeckung leisten. Mit diesem Beitrag unterstützen Sie die zukünftige Weiterentwicklung.
+
+Klicken Sie dazu auf den Spenden-Button um über Paypal zu spenden.
+Sie werden automatisch zur Spendenseite weitergeleitet.</value>
+  </data>
+  <data name="DicMaxLiter" xml:space="preserve">
+    <value>insgesamt getankte Liter</value>
+  </data>
+  <data name="MessageBoxNeedTotalKmContent" xml:space="preserve">
+    <value>Das letzte Mal wurde nur eine Teilbetankung durchgeführt. Um den Verbrauch richtig berechnen zu können wird der Gesamtkilometerstand benötigt.</value>
+  </data>
+  <data name="MessageBoxNeedTotalKmHeader" xml:space="preserve">
+    <value>Gesamtkilometerstand benötigt</value>
+  </data>
+</root>

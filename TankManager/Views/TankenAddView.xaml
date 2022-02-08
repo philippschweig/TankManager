@@ -1,0 +1,92 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="TankManager.Views.TankenAddView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:vm="clr-namespace:TankManager.ViewModel"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit" 
+    xmlns:Coding4Fun_Phone_Controls="clr-namespace:Coding4Fun.Phone.Controls;assembly=Coding4Fun.Phone.Controls"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True" Loaded="PhoneApplicationPage_Loaded">
+	
+	<phone:PhoneApplicationPage.Resources>
+		<vm:FahrzeugViewModel x:Key="ViewModel"/>
+	</phone:PhoneApplicationPage.Resources>
+	
+	<phone:PhoneApplicationPage.ApplicationBar>
+		<shell:ApplicationBar IsVisible="True">
+			<shell:ApplicationBarIconButton x:Name="AppBarIconButtonNext" IconUri="/icons/appbar.next.rest.png" Text="AppBarIconButtonNext" IsEnabled="True" Click="AppBarIconButtonNext_Click"/>
+			<shell:ApplicationBarIconButton x:Name="AppBarIconButtonSave" Text="AppBarIconButtonSave" IsEnabled="False" Click="AppBarIconButtonSave_Click" IconUri="/icons/appbar.save.rest.png"/>
+		</shell:ApplicationBar>
+	</phone:PhoneApplicationPage.ApplicationBar>
+	
+	<phone:PhoneApplicationPage.FontFamily>
+		<StaticResource ResourceKey="PhoneFontFamilyNormal"/>
+	</phone:PhoneApplicationPage.FontFamily>
+	<phone:PhoneApplicationPage.FontSize>
+		<StaticResource ResourceKey="PhoneFontSizeNormal"/>
+	</phone:PhoneApplicationPage.FontSize>
+	<phone:PhoneApplicationPage.Foreground>
+		<StaticResource ResourceKey="PhoneForegroundBrush"/>
+	</phone:PhoneApplicationPage.Foreground>
+	
+    <!--LayoutRoot ist das Stammraster, in dem alle anderen Seiteninhalte platziert werden-->
+    <Grid x:Name="LayoutRoot" Background="Transparent" DataContext="{Binding AktuellesFahrzeug, Source={StaticResource ViewModel}}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel enthält den Namen der Anwendung und den Seitentitel-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="{Binding AppTitleUpperCase, Source={StaticResource Eigenschaften}}" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Text="{Binding Resources.TankenAddViewTitle, Source={StaticResource Translation}}" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - zusätzliche Inhalte hier platzieren-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+        	<ScrollViewer x:Name="ScrollViewer_Content" d:LayoutOverrides="Height">
+        		<StackPanel Orientation="Vertical">
+        			<toolkit:ToggleSwitch x:Name="ToggleSwitch_Vollgetankt" Header="{Binding Resources.DicFullyFuelling, Source={StaticResource Translation}}" IsChecked="True" Click="ToggleSwitch_Vollgetankt_Click" Content=""/>
+        			<toolkit:Separator Background="{StaticResource PhoneAccentBrush}" BorderThickness="0" VerticalAlignment="Top"/>
+        			<StackPanel x:Name="StackPanel_Datum">
+        				<TextBlock TextWrapping="Wrap" Text="{Binding Resources.DicDate, Source={StaticResource Translation}}" Style="{StaticResource PhoneTextSubtleStyle}" Margin="12,0,0,0"/>
+        				<StackPanel Orientation="Horizontal" Margin="12,0,0,0" HorizontalAlignment="Left">
+        					<toolkit:DatePicker HorizontalContentAlignment="Center" FlowDirection="LeftToRight" x:Name="DatePicker_Datum" Header="" Height="72" Width="200" IsEnabled="False" ValueChanged="DatePicker_Datum_ValueChanged" />
+        					<Button x:Name="Button_Datum" Content="{Binding Resources.DicEdit, Source={StaticResource Translation}}" Click="Button_Datum_Click"/>
+        				</StackPanel>
+        			</StackPanel>
+        			<StackPanel x:Name="StackPanel_Km">
+        				<toolkit:ToggleSwitch x:Name="ToggleSwitch_KmZaehler" Header="{Binding Resources.FahrzeugAddViewCounterText, Source={StaticResource Translation}}" Click="ToggleSwitch_KmZaehler_Click" Visibility="Collapsed"/>
+        				<TextBlock x:Name="TextBlock_Km" TextWrapping="Wrap" Style="{StaticResource PhoneTextSubtleStyle}" Margin="12,0"/>
+        				<StackPanel Orientation="Horizontal" Margin="12,0,0,0">
+        					<TextBox x:Name="TextBox_Km" TextWrapping="Wrap" Width="270" d:LayoutOverrides="Height" VerticalAlignment="Center" InputScope="Number" TabIndex="1" TabNavigation="Cycle" LostFocus="TextBox_Km_LostFocus"/>
+        					<TextBlock TextWrapping="Wrap" Text="{Binding Resources.UnitSystemLengthShort, Source={StaticResource Translation}}" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}"/>
+        				</StackPanel>
+        			</StackPanel>
+        			<StackPanel x:Name="StackPanel_Liter">
+        				<TextBlock TextWrapping="Wrap" Text="{Binding Resources.UnitSystemVolume, Source={StaticResource Translation}}" Style="{StaticResource PhoneTextSubtleStyle}" Margin="12,0"/>
+        				<StackPanel Margin="12,0,0,0" Orientation="Horizontal">
+        					<TextBox x:Name="TextBox_Liter" TextWrapping="Wrap" VerticalAlignment="Center" Width="200" InputScope="Number" TabIndex="2" TabNavigation="Cycle" LostFocus="TextBox_Liter_LostFocus"/>
+        					<TextBlock TextWrapping="Wrap" Text="{Binding Resources.UnitSystemVolumeShort, Source={StaticResource Translation}}" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}"/>
+        				</StackPanel>
+        			</StackPanel>
+        			<StackPanel x:Name="StackPanel_Kosten">
+        				<TextBlock TextWrapping="Wrap" Text="{Binding Resources.DicBillValue, Source={StaticResource Translation}}" Style="{StaticResource PhoneTextSubtleStyle}" Margin="12,0"/>
+        				<StackPanel Margin="12,0,0,0" Orientation="Horizontal">
+        					<TextBox x:Name="TextBox_Kosten" TextWrapping="Wrap" Width="200" VerticalAlignment="Center" InputScope="Number" TabIndex="3" TabNavigation="Cycle" LostFocus="TextBox_Kosten_LostFocus"/>
+        					<TextBlock TextWrapping="Wrap" Text="{Binding CurrencySymbol, Source={StaticResource Eigenschaften}}" VerticalAlignment="Center" Style="{StaticResource PhoneTextLargeStyle}"/>
+        				</StackPanel>
+        			</StackPanel>
+        			<toolkit:Separator Background="{StaticResource PhoneAccentBrush}" BorderThickness="0" VerticalAlignment="Top"/>
+        			<toolkit:ListPicker x:Name="ListPicker_SpritQuelle" SelectionChanged="ListPicker_SpritQuelle_SelectionChanged"/>
+        		</StackPanel>
+        	</ScrollViewer>
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

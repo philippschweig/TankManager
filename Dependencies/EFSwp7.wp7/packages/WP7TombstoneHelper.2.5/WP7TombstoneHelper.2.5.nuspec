@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>WP7TombstoneHelper</id>
+    <version>2.5</version>
+    <title>WP7TombstoneHelper</title>
+    <authors>Matt Lacey</authors>
+    <owners>Matt Lacey</owners>
+    <licenseUrl>http://tombstonehelper.codeplex.com/license</licenseUrl>
+    <projectUrl>http://tombstonehelper.codeplex.com/</projectUrl>
+    <iconUrl>http://mrlacey.co.uk/images/Tombstone-helper.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A library to make it really easy to support tombstoning in the pages of a Windows Phone 7 Silverlight app.</description>
+    <summary>A library to make it really easy to support tombstoning in the pages of a Windows Phone 7 Silverlight app.</summary>
+    <releaseNotes />
+    <copyright />
+    <language />
+    <tags>WP7 Windows-Phone phone Silverlight</tags>
+  </metadata>
+</package>

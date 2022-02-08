@@ -1,0 +1,142 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="TankManager.Views.EinstellungenView" 
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+	xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+	xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:vm="clr-namespace:TankManager.ViewModel"
+	xmlns:tilt="clr-namespace:ControlTiltEffect;assembly=EFSwp7"
+	xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+	xmlns:live="clr-namespace:Microsoft.Live.Controls;assembly=Microsoft.Live.Controls"
+	xmlns:Coding4Fun_Phone_Controls="clr-namespace:Coding4Fun.Phone.Controls;assembly=Coding4Fun.Phone.Controls"
+    d:DesignWidth="480" d:DesignHeight="768"
+    mc:Ignorable="d"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True"
+	tilt:TiltEffect.IsTiltEnabled="True">
+
+	<phone:PhoneApplicationPage.Resources>
+		<vm:EinstellungenViewModel x:Key="ViewModel"/>
+		
+		<DataTemplate x:Key="FahrzeugItemTemplate">
+			<Border Background="{StaticResource PhoneAccentBrush}" BorderBrush="{StaticResource PhoneChromeBrush}" BorderThickness="2" Padding="10" MinHeight="60">
+				<toolkit:ContextMenuService.ContextMenu>
+					<toolkit:ContextMenu>
+						<toolkit:MenuItem x:Name="MenuItem_Modify" DataContext="{Binding}" Header="{Binding Resources.DicEdit, Source={StaticResource Translation}}" Click="MenuItem_Modify_Click"/>
+						<toolkit:MenuItem x:Name="MenuItem_Delete" DataContext="{Binding}" Header="{Binding Resources.DicDelete, Source={StaticResource Translation}}" Click="MenuItem_Delete_Click"/>
+					</toolkit:ContextMenu>
+				</toolkit:ContextMenuService.ContextMenu>
+				<Grid>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="Auto"/>
+						<ColumnDefinition/>
+					</Grid.ColumnDefinitions>
+					<StackPanel Orientation="Horizontal" d:LayoutOverrides="VerticalAlignment, Width, Height" Margin="0,0,5,0">
+						<TextBlock Margin="0" TextWrapping="Wrap" Text="{Binding Name}" Foreground="{StaticResource PhoneForegroundBrush}" Style="{StaticResource PhoneTextLargeStyle}" VerticalAlignment="Center"/>
+						<TextBlock TextWrapping="Wrap" Text="{Binding Kennzeichen}" VerticalAlignment="Center" Style="{StaticResource PhoneTextSubtleStyle}" Margin="12,0,0,0"/>
+					</StackPanel>
+					<Border BorderThickness="2" Grid.Column="1" HorizontalAlignment="Right" Margin="5,0,0,0" CornerRadius="5" BorderBrush="{StaticResource PhoneBackgroundBrush}" Background="{StaticResource PhoneContrastBackgroundBrush}">
+						<TextBlock TextWrapping="Wrap" Text="{Binding Tankverlauf.Count}" Foreground="{StaticResource PhoneContrastForegroundBrush}" Style="{StaticResource PhoneTextNormalStyle}" Margin="2,0" TextAlignment="Center" VerticalAlignment="Center"/>
+					</Border>
+				</Grid>
+			</Border>
+		</DataTemplate>
+	</phone:PhoneApplicationPage.Resources>
+
+	<phone:PhoneApplicationPage.FontFamily>
+		<StaticResource ResourceKey="PhoneFontFamilyNormal"/>
+	</phone:PhoneApplicationPage.FontFamily>
+	<phone:PhoneApplicationPage.FontSize>
+		<StaticResource ResourceKey="PhoneFontSizeNormal"/>
+	</phone:PhoneApplicationPage.FontSize>
+	<phone:PhoneApplicationPage.Foreground>
+		<StaticResource ResourceKey="PhoneForegroundBrush"/>
+	</phone:PhoneApplicationPage.Foreground>
+
+	<!--LayoutRoot ist das Stammraster, in dem alle anderen Seiteninhalte platziert werden-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <!--Pivotsteuerelement-->
+		<controls:Pivot x:Name="PivotControl" Title="{Binding AppTitleUpperCase, Source={StaticResource Eigenschaften}}" DataContext="{Binding Source={StaticResource ViewModel}}" SelectionChanged="PivotControl_SelectionChanged">
+            <!--Pivotelement eins-->
+            <controls:PivotItem x:Name="PivotItem_General" Header="{Binding Resources.EinstellungenViewGeneralPivotTitle, Source={StaticResource Translation}}" Loaded="PivotItem_General_Loaded">
+                <ScrollViewer>
+            		<StackPanel>
+                		<StackPanel>
+                			<TextBlock Text="{Binding Resources.EinstellungenViewLengthCounter, Source={StaticResource Translation}}" Style="{StaticResource PhoneTextSubtleStyle}"/>
+                			<Grid Margin="22,0">
+                				<Grid.ColumnDefinitions>
+                					<ColumnDefinition/>
+                					<ColumnDefinition Width="Auto"/>
+                				</Grid.ColumnDefinitions>
+                				<toolkit:ListPicker x:Name="ListPicker_KmCounter" Margin="0,5,0,0" SelectionChanged="ListPicker_KmCounter_SelectionChanged" d:LayoutOverrides="Height"/>
+                				<Button x:Name="Button_Info" HorizontalAlignment="Right" Margin="0" d:LayoutOverrides="Height" Grid.Column="1" VerticalAlignment="Top" BorderThickness="3" Padding="0" Background="Black">
+                					<Image Source="/TankManager;component/icons/appbar.info2.rest.png" Stretch="Fill"/>
+                				</Button>
+                			</Grid>
+                		</StackPanel>
+                		<toolkit:Separator Background="{StaticResource PhoneAccentBrush}" Margin="20,15,20,4"/>
+                		<StackPanel Orientation="Vertical">
+                			<toolkit:ToggleSwitch x:Name="ToggleSwitch_ShowVehicleEditButton" Click="ToggleSwitch_ShowVehicleEditButton_Click" d:LayoutOverrides="Width"/>
+                			<TextBlock x:Name="TextBlock_ShowVehicleEditButton" Text="{Binding Resources.EinstellungenViewShowVehicleEditButton_Info, Source={StaticResource Translation}}" TextWrapping="Wrap" Style="{StaticResource PhoneTextNormalStyle}" d:LayoutOverrides="Width, HorizontalMargin"/>
+                		</StackPanel>
+                		<StackPanel>
+                			<toolkit:ToggleSwitch x:Name="ToggleSwitch_ExitMessage"/>
+                		</StackPanel>
+                	</StackPanel>
+            	</ScrollViewer>
+            </controls:PivotItem>
+
+            <!--Pivotelement zwei-->
+            <controls:PivotItem x:Name="PivotItem_Vehicles" Header="{Binding Resources.EinstellungenViewCarManagePivotTitle, Source={StaticResource Translation}}" Loaded="PivotItem_Vehicles_Loaded">
+                <Grid>
+					<ListBox x:Name="ListBox_Vehicles" ItemsSource="{Binding SortedFahrzeuge.View}" ItemTemplate="{StaticResource FahrzeugItemTemplate}" SelectionChanged="ListBox_Vehicles_SelectionChanged">
+						<ListBox.ItemContainerStyle>
+							<Style TargetType="ListBoxItem">
+								<Setter Property="Template">
+									<Setter.Value>
+										<ControlTemplate>
+											<ContentPresenter HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,0,10,15"/>
+										</ControlTemplate>
+									</Setter.Value>
+								</Setter>
+							</Style>
+						</ListBox.ItemContainerStyle>
+					</ListBox>
+				</Grid>
+            </controls:PivotItem>
+            <controls:PivotItem x:Name="PivotItem_Backup" Header="Backup" Loaded="PivotItem_Backup_Loaded">
+				<ScrollViewer Background="Transparent">
+            		<Grid>
+						<StackPanel x:Name="StackPanel_SkyDrive" d:LayoutOverrides="Width, Height">
+							<TextBlock TextWrapping="Wrap" Text="SkyDrive" Style="{StaticResource PhoneTextTitle2Style}"/>
+							<StackPanel Orientation="Vertical" Margin="20" >
+								<TextBlock Text="{Binding Resources.EinstellungenViewBackupInfo, Source={StaticResource Translation}}" Margin="0" TextWrapping="Wrap" Style="{StaticResource PhoneTextTitle3Style}"/>
+								<StackPanel x:Name="StackPanel_LastBackup" Orientation="Horizontal" Margin="0,15,0,0">
+									<TextBlock TextWrapping="Wrap" Text="{Binding Resources.EinstellungenViewLastBackup, Source={StaticResource Translation}}" Style="{StaticResource PhoneTextSubtleStyle}" Margin="0,0,12,0"/>
+									<TextBlock x:Name="TextBlock_LastBackup" TextWrapping="Wrap" Style="{StaticResource PhoneTextTitle3Style}"/>
+								</StackPanel>
+								<Grid Margin="0,20,0,0">
+									<live:SignInButton x:Name="Button_Signin" ClientId="00000000440C346A" Scopes="wl.signin wl.offline_access wl.skydrive_update" SessionChanged="Button_Signin_SessionChanged" VerticalAlignment="Top" Branding="Skydrive" TextType="Connect" SignInText="{Binding Resources.DicConnect, Source={StaticResource Translation}}" SignOutText="{Binding Resources.DicDisconnect, Source={StaticResource Translation}}" Click="Button_Signin_Click"/>
+									<TextBlock x:Name="TextBlock_NoInternetConnection" TextWrapping="Wrap" Text="{Binding Resources.DicNoInternetConnection, Source={StaticResource Translation}}" Style="{StaticResource PhoneTextTitle2Style}" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Red" Visibility="Collapsed" IsHitTestVisible="False"/>
+								</Grid>
+								<StackPanel x:Name="StackPanel_Connected" Orientation="Vertical" Margin="0,20,0,0" Visibility="Collapsed" >
+									<TextBlock x:Name="TextBlock_Welcome" Text="{Binding Resources.EinstellungenViewBackupConnectInfo, Source={StaticResource Translation}}" Margin="0" Style="{StaticResource PhoneTextAccentStyle}" TextWrapping="Wrap" HorizontalAlignment="Center" Foreground="{StaticResource PhoneAccentBrush}"/>
+									<ProgressBar x:Name="ProgressBar_SkyDrive" Margin="0,10,0,5" Background="{StaticResource PhoneAccentBrush}" Foreground="{StaticResource PhoneAccentBrush}" Opacity="0"/>
+									<Button x:Name="Button_Backup" Content="{Binding Resources.EinstellungenViewBackupSaveToSkyDrive, Source={StaticResource Translation}}" Click="Button_Backup_Click"/>
+									<Button x:Name="Button_Restore" Content="{Binding Resources.EinstellungenViewBackupLoadFromSkyDrive, Source={StaticResource Translation}}" Click="Button_Restore_Click"/>
+								</StackPanel>
+							</StackPanel>
+						</StackPanel>
+						<Coding4Fun_Phone_Controls:ProgressOverlay x:Name="ProgressOverlay" Canvas.ZIndex="1" Visibility="Collapsed">
+							<toolkit:PerformanceProgressBar x:Name="PerformanceProgressBar" Height="100"/>
+						</Coding4Fun_Phone_Controls:ProgressOverlay>
+					</Grid>
+            	</ScrollViewer>
+			</controls:PivotItem>
+        </controls:Pivot>
+    </Grid>
+    
+</phone:PhoneApplicationPage>

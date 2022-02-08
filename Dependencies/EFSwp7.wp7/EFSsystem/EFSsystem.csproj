@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E4A84C70-75C8-4492-B469-A5D5B3177B02}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EFSsystem</RootNamespace>
+    <AssemblyName>EFSsystem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Controls.Toolkit">
+      <HintPath>..\packages\WPtoolkit.4.2013.08.16\lib\sl4-windowsphone71\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Serialization">
+      <HintPath>..\#libs\Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="Silverlight.Md5">
+      <HintPath>..\#libs\Silverlight.Md5.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Net" />
+    <Reference Include="mscorlib.extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml.Serialization" />
+    <Reference Include="TombstoneHelper">
+      <HintPath>..\packages\WP7TombstoneHelper.2.5\lib\TombstoneHelper.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EFSconverter\DateTimeConverter.cs" />
+    <Compile Include="EFSconverter\Objects.cs" />
+    <Compile Include="EFSconverter\UnitSystem.cs" />
+    <Compile Include="EFSdatastorage\DataStorage.cs" />
+    <Compile Include="EFSdebugging\DebuggingConverter.cs" />
+    <Compile Include="EFSdebugging\EFSdebug.cs" />
+    <Compile Include="EFSexceptions\EFSexception.cs" />
+    <Compile Include="EFSexceptions\EFSinnerException.cs" />
+    <Compile Include="EFSexceptions\SysException.cs" />
+    <Compile Include="EFSextensions\DateTimeExtensions.cs" />
+    <Compile Include="EFSextensions\ImageExtensions.cs" />
+    <Compile Include="EFSextensions\NavigationServiceExtensions.cs" />
+    <Compile Include="EFSextensions\ObjectExtensions.cs" />
+    <Compile Include="EFSextensions\StreamExtensions.cs" />
+    <Compile Include="EFSextensions\StringExtensions.cs" />
+    <Compile Include="EFSlogging\EFSlogsystem.cs" />
+    <Compile Include="EFSlogging\LogHistory.cs" />
+    <Compile Include="EFSlogging\LogLevel.cs" />
+    <Compile Include="EFSlogging\LogPoint.cs" />
+    <Compile Include="EFSlogging\View\LogPointTemplateSelector.cs" />
+    <Compile Include="EFSlogging\View\LogView.xaml.cs">
+      <DependentUpon>LogView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EFSlogging\View\LogViewModel.cs" />
+    <Compile Include="EFSnetwork\HttpRequest.cs" />
+    <Compile Include="EFSnetwork\NetworkMonitor.cs" />
+    <Compile Include="EFSperformance.cs" />
+    <Compile Include="PathTool.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="EFSlogging\View\LogView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EFStranslation\EFStranslation.csproj">
+      <Project>{B748E2AB-F7EA-416C-878A-1C395DF690F4}</Project>
+      <Name>EFStranslation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EFSwp7\EFSwp7.csproj">
+      <Project>{F4F7B739-097F-428A-877C-5DCD000171A5}</Project>
+      <Name>EFSwp7</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="README_FIRST.txt" />
+    <Content Include="Toolkit.Content\ApplicationBar.Add.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Delete.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <ProjectExtensions />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

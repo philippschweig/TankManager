@@ -1,0 +1,14 @@
+﻿FEATURES
+
+- Statistiken Kosten, Verbrauch, Literpreis
+- Preisanalyse (An welchen Wochentagen  kostet es wieviel?)
+- Export/Import
+- GPS-Positionsdaten für Tankvorgänge
+- Anmerkungen für Tankvorgänge
+- Literpreismelder -> clever-tanken.de
+	- nur wenn Erstellzeitstempel = Tankzeitstempel
+- Betankungssymbole anpassen (vollgetankt = ausgefüllter Kanister)
+
+
+BUGS
+- WinPhone 8 Komma

@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DicAppLoadTime" xml:space="preserve">
+    <value>Ladezeit der Anwendung</value>
+  </data>
+  <data name="DicBillion" xml:space="preserve">
+    <value>Billion</value>
+  </data>
+  <data name="DicBillionth" xml:space="preserve">
+    <value>Billionstel</value>
+  </data>
+  <data name="DicCompany" xml:space="preserve">
+    <value>Entwickler</value>
+  </data>
+  <data name="DicCurrentRamUsage" xml:space="preserve">
+    <value>Aktueller RAM-Verbrauch</value>
+  </data>
+  <data name="DicEmail" xml:space="preserve">
+    <value>E-Mail</value>
+  </data>
+  <data name="DicHundert" xml:space="preserve">
+    <value>Hundert</value>
+  </data>
+  <data name="DicHundredth" xml:space="preserve">
+    <value>Hundertstel</value>
+  </data>
+  <data name="DicLastUpdate" xml:space="preserve">
+    <value>Letzte Aktualisierung</value>
+  </data>
+  <data name="DicMaxRamUsage" xml:space="preserve">
+    <value>Zugesicherter RAM-Verbrauch</value>
+  </data>
+  <data name="DicMilliard" xml:space="preserve">
+    <value>Milliard</value>
+  </data>
+  <data name="DicMilliardth" xml:space="preserve">
+    <value>Milliardstel</value>
+  </data>
+  <data name="DicMillion" xml:space="preserve">
+    <value>Million</value>
+  </data>
+  <data name="DicMillionth" xml:space="preserve">
+    <value>Millionstel</value>
+  </data>
+  <data name="DicPeakRamUsage" xml:space="preserve">
+    <value>Höchster RAM-Verbrauch</value>
+  </data>
+  <data name="DicQuadrillion" xml:space="preserve">
+    <value>Billiarde</value>
+  </data>
+  <data name="DicQuadrillionth" xml:space="preserve">
+    <value>Billiardstel</value>
+  </data>
+  <data name="DicQuintillion" xml:space="preserve">
+    <value>Trillion</value>
+  </data>
+  <data name="DicQuintillionth" xml:space="preserve">
+    <value>Trillionstel</value>
+  </data>
+  <data name="DicRateReview" xml:space="preserve">
+    <value>Bewertung abgeben</value>
+  </data>
+  <data name="DicRefresh" xml:space="preserve">
+    <value>Aktualisieren</value>
+  </data>
+  <data name="DicSendOff" xml:space="preserve">
+    <value>Absenden</value>
+  </data>
+  <data name="DicSupport" xml:space="preserve">
+    <value>Support</value>
+  </data>
+  <data name="DicTen" xml:space="preserve">
+    <value>Zehn</value>
+  </data>
+  <data name="DicTenth" xml:space="preserve">
+    <value>Zehntel</value>
+  </data>
+  <data name="DicThousand" xml:space="preserve">
+    <value>Tausend</value>
+  </data>
+  <data name="DicThousandth" xml:space="preserve">
+    <value>Tausendstel</value>
+  </data>
+  <data name="DicVersion" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="EFShelpViewTitle" xml:space="preserve">
+    <value>Hilfe</value>
+  </data>
+  <data name="EFSinfoView_About" xml:space="preserve">
+    <value>Über</value>
+  </data>
+  <data name="EFSinfoView_Credits" xml:space="preserve">
+    <value>Impressum</value>
+  </data>
+  <data name="EFSinfoView_Diagnostic" xml:space="preserve">
+    <value>Leistungsdiagnose</value>
+  </data>
+  <data name="EFSinfoView_Feedback" xml:space="preserve">
+    <value>Feedback</value>
+  </data>
+  <data name="EFSinfoView_History" xml:space="preserve">
+    <value>Versionen</value>
+  </data>
+  <data name="EFSlogsystem_Addition" xml:space="preserve">
+    <value>Zusatz</value>
+  </data>
+  <data name="EFSlogsystem_Class" xml:space="preserve">
+    <value>Klasse</value>
+  </data>
+  <data name="EFSlogsystem_Content" xml:space="preserve">
+    <value>Inhalt</value>
+  </data>
+  <data name="EFSlogsystem_LogLevel" xml:space="preserve">
+    <value>Level</value>
+  </data>
+  <data name="EFSlogsystem_LogViewTitle" xml:space="preserve">
+    <value>Logs</value>
+  </data>
+  <data name="EFSlogsystem_MessageBox_Content" xml:space="preserve">
+    <value>Bei der letzten Ausführung der Application kam es zu einem Absturz der Anwendung. Bitte Schicken Sie uns den Log zu, damit wir dem Fehler nachgehen können.
+Log jetzt zusenden?</value>
+  </data>
+  <data name="EFSlogsystem_MessageBox_Header" xml:space="preserve">
+    <value>Logsystem</value>
+  </data>
+  <data name="EFSlogsystem_TimeStamp" xml:space="preserve">
+    <value>Zeitstempel</value>
+  </data>
+  <data name="FeedbackItemBug" xml:space="preserve">
+    <value>Fehler melden</value>
+  </data>
+  <data name="FeedbackItemCommon" xml:space="preserve">
+    <value>Allgemeines</value>
+  </data>
+  <data name="FeedbackItemFeature" xml:space="preserve">
+    <value>Erweiterung vorschlagen</value>
+  </data>
+  <data name="PageTransporterNavigationFailed" xml:space="preserve">
+    <value>Navigation fehlgeschlagen</value>
+  </data>
+  <data name="SkyDriveDownloadOverwrite_MessageBox_Content" xml:space="preserve">
+    <value>Möglicherweise werden vorhandene Daten auf dem Telefon überschrieben.
+Wollen Sie fortfahren?</value>
+  </data>
+  <data name="SkyDriveUploadOverwrite_MessageBox_Content" xml:space="preserve">
+    <value>Möglicherweise werden vorhandene Daten auf SkyDrive überschrieben.
+Wollen Sie fortfahren?</value>
+  </data>
+  <data name="UnitSystem_ImperialUK_Name" xml:space="preserve">
+    <value>Angloamerikanisches System</value>
+  </data>
+  <data name="UnitSystem_ImperialUS_Length2_Name" xml:space="preserve">
+    <value>Meile(n)</value>
+  </data>
+  <data name="UnitSystem_ImperialUS_Length2_Shortcut" xml:space="preserve">
+    <value>mi</value>
+  </data>
+  <data name="UnitSystem_ImperialUS_Name" xml:space="preserve">
+    <value>Imperiales US-System</value>
+  </data>
+  <data name="UnitSystem_ImperialUS_Volume2_Name" xml:space="preserve">
+    <value>Gallone</value>
+  </data>
+  <data name="UnitSystem_ImperialUS_Volume2_Shortcut" xml:space="preserve">
+    <value>gal</value>
+  </data>
+  <data name="UnitSystem_Metrical_Length2_Name" xml:space="preserve">
+    <value>Kilometer</value>
+  </data>
+  <data name="UnitSystem_Metrical_Length2_Shortcut" xml:space="preserve">
+    <value>km</value>
+  </data>
+  <data name="UnitSystem_Metrical_Name" xml:space="preserve">
+    <value>Metrisches System</value>
+  </data>
+  <data name="UnitSystem_Metrical_Volume2_Name" xml:space="preserve">
+    <value>Liter</value>
+  </data>
+  <data name="UnitSystem_Metrical_Volume2_Shortcut" xml:space="preserve">
+    <value>l</value>
+  </data>
+</root>

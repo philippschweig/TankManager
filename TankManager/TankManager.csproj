@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0C16DF5E-BE3B-4203-AC8F-613A833FA4FD}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TankManager</RootNamespace>
+    <AssemblyName>TankManager</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>TankManager.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>TankManager.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EFSapp">
+      <HintPath>..\..\..\crossplatform\EFSresources\EFSwp7.wp7\Binaries\Release\EFSapp.dll</HintPath>
+    </Reference>
+    <Reference Include="EFSframeworkelements">
+      <HintPath>..\..\..\crossplatform\EFSresources\EFSwp7.wp7\Binaries\Release\EFSframeworkelements.dll</HintPath>
+    </Reference>
+    <Reference Include="EFSmath">
+      <HintPath>..\..\..\crossplatform\EFSresources\EFSwp7.wp7\Binaries\Release\EFSmath.dll</HintPath>
+    </Reference>
+    <Reference Include="EFSsystem">
+      <HintPath>..\..\..\crossplatform\EFSresources\EFSwp7.wp7\Binaries\Release\EFSsystem.dll</HintPath>
+    </Reference>
+    <Reference Include="EFStranslation">
+      <HintPath>..\..\..\crossplatform\EFSresources\EFSwp7.wp7\Binaries\Release\EFStranslation.dll</HintPath>
+    </Reference>
+    <Reference Include="EFSviews">
+      <HintPath>..\..\..\crossplatform\EFSresources\EFSwp7.wp7\Binaries\Release\EFSviews.dll</HintPath>
+    </Reference>
+    <Reference Include="EFSwp7">
+      <HintPath>..\..\..\crossplatform\EFSresources\EFSwp7.wp7\Binaries\Release\EFSwp7.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Controls, Version=7.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Interop" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml" />
+    <Reference Include="mscorlib.extensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\Converter.cs" />
+    <Compile Include="Helper\XamlHelper.cs" />
+    <Compile Include="Lokalisierung\LanguageProvider.cs" />
+    <Compile Include="Lokalisierung\Translation.Designer.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AppControlModel.cs" />
+    <Compile Include="Model\EinstellungenModel.cs" />
+    <Compile Include="Model\ExtrasModel.cs" />
+    <Compile Include="Model\FahrzeugExtrasModel.cs" />
+    <Compile Include="Model\FahrzeugModel.cs" />
+    <Compile Include="Model\HelpModel.cs" />
+    <Compile Include="Model\KennzeichenModel.cs" />
+    <Compile Include="Model\ListItemModel.cs" />
+    <Compile Include="Model\SpritModel.cs" />
+    <Compile Include="Model\SpritQuelleModel.cs" />
+    <Compile Include="Model\StatistikModel.cs" />
+    <Compile Include="Model\TankvorgangExtrasModel.cs" />
+    <Compile Include="Model\TankvorgangModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sys\SysConst.cs" />
+    <Compile Include="ViewModel\CreditsViewModel.cs" />
+    <Compile Include="ViewModel\EinstellungenViewModel.cs" />
+    <Compile Include="ViewModel\FahrzeugViewModel.cs" />
+    <Compile Include="ViewModel\HelpViewModel.cs" />
+    <Compile Include="ViewModel\HistoryViewModel.cs" />
+    <Compile Include="ViewModel\ListItemViewModel.cs" />
+    <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewModel\SpritViewModel.cs" />
+    <Compile Include="ViewModel\TankverlaufViewModel.cs" />
+    <Compile Include="Views\EinstellungenView.xaml.cs">
+      <DependentUpon>EinstellungenView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FahrzeugAddView.xaml.cs">
+      <DependentUpon>FahrzeugAddView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FahrzeugEditView.xaml.cs">
+      <DependentUpon>FahrzeugEditView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GraphicalAnalysisView.xaml.cs">
+      <DependentUpon>GraphicalAnalysisView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HelpView.xaml.cs">
+      <DependentUpon>HelpView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\InfoView.xaml.cs">
+      <DependentUpon>InfoView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TankbuchView.xaml.cs">
+      <DependentUpon>TankbuchView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TankenAddPage.xaml.cs">
+      <DependentUpon>TankenAddPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TankenAddView.xaml.cs">
+      <DependentUpon>TankenAddView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TankenEditView.xaml.cs">
+      <DependentUpon>TankenEditView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TanktabelleView.xaml.cs">
+      <DependentUpon>TanktabelleView.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\TankManagerStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TankManagerStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\EinstellungenView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\FahrzeugAddView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\FahrzeugEditView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\GraphicalAnalysisView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\HelpView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\InfoView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\TankbuchView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\TankenAddPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\TankenAddView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\TankenEditView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\TanktabelleView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\TankManager.metrop" />
+    <None Include="ModelDefinition\TankManager.uml" />
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="help.htm" />
+    <Content Include="icons\appbar.add.rest.png" />
+    <Content Include="icons\appbar.basecircle.rest.png" />
+    <Content Include="icons\appbar.check.rest.png" />
+    <Content Include="icons\appbar.delete.rest.png" />
+    <Content Include="icons\appbar.edit.rest.png" />
+    <Content Include="icons\appbar.feature.settings.rest.png" />
+    <Content Include="icons\appbar.fuellog.rest.png" />
+    <Content Include="icons\appbar.info.rest.png" />
+    <Content Include="icons\appbar.info2.rest.png" />
+    <Content Include="icons\appbar.info3.rest.png" />
+    <Content Include="icons\appbar.mail.send.png" />
+    <Content Include="icons\appbar.next.rest.png" />
+    <Content Include="icons\appbar.save.rest.png" />
+    <Content Include="icons\appbar.tanke.rest.png" />
+    <Content Include="icons\Filter down.png" />
+    <Content Include="icons\Filter Up.png" />
+    <Content Include="icons\GPS.png" />
+    <Content Include="icons\kanister.empty.dark.png" />
+    <Content Include="icons\kanister.empty.light.png" />
+    <Content Include="icons\kanister.full.dark.png" />
+    <Content Include="icons\kanister.full.light.png" />
+    <Content Include="icons\Sort as Ascending.png" />
+    <Content Include="icons\Sort as Descending.png" />
+    <Content Include="Images\LiveSDKIcon.48.png" />
+    <Content Include="Images\Source.svg" />
+    <Content Include="Images\SplashScreenImage.png" />
+    <Content Include="libs\AmCharts.Windows.QuickCharts.WP.dll" />
+    <Content Include="libs\Coding4Fun.Phone.Controls.dll" />
+    <Content Include="libs\Coding4Fun.Phone.Controls.Toolkit.dll" />
+    <Content Include="libs\Coding4Fun.Phone.Site.Controls.dll" />
+    <Content Include="libs\Microsoft.Live.Controls.dll" />
+    <Content Include="libs\Microsoft.Live.dll" />
+    <Content Include="libs\Microsoft.Phone.Controls.dll" />
+    <Content Include="libs\Microsoft.Phone.Controls.Toolkit.dll" />
+    <Content Include="libs\MyToolkit.dll" />
+    <Content Include="PanoramaBackground.png" />
+    <Content Include="SplashScreenImage.jpg" />
+    <Content Include="ToDoList.txt" />
+    <Content Include="Toolkit.Content\ApplicationBar.Add.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Delete.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Lokalisierung\Translation.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>

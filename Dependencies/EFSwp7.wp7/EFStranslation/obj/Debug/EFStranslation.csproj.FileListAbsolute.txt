@@ -1,0 +1,6 @@
+D:\Philipp\Software-Engineering\de.efsdev\crossplatform\EFSresources\EFSwp7.wp7\EFStranslation\Bin\Debug\EFStranslation.dll
+D:\Philipp\Software-Engineering\de.efsdev\crossplatform\EFSresources\EFSwp7.wp7\EFStranslation\Bin\Debug\EFStranslation.pdb
+D:\Philipp\Software-Engineering\de.efsdev\crossplatform\EFSresources\EFSwp7.wp7\EFStranslation\obj\Debug\EFStranslation.EFSlanguage.resources
+D:\Philipp\Software-Engineering\de.efsdev\crossplatform\EFSresources\EFSwp7.wp7\EFStranslation\obj\Debug\EFStranslation.csproj.GenerateResource.Cache
+D:\Philipp\Software-Engineering\de.efsdev\crossplatform\EFSresources\EFSwp7.wp7\EFStranslation\obj\Debug\EFStranslation.dll
+D:\Philipp\Software-Engineering\de.efsdev\crossplatform\EFSresources\EFSwp7.wp7\EFStranslation\obj\Debug\EFStranslation.pdb

@@ -1,0 +1,17 @@
+D:\Philipp\Software-Engineering\de.efsdev\windowsphone\TankManager.wp7\TankManager\obj\Debug\TankManager.csprojResolveAssemblyReference.cache
+D:\Philipp\Software-Engineering\de.efsdev\windowsphone\TankManager.wp7\TankManager\obj\Debug\App.g.cs
+D:\Philipp\Software-Engineering\de.efsdev\windowsphone\TankManager.wp7\TankManager\obj\Debug\MainPage.g.cs
+D:\Philipp\Software-Engineering\de.efsdev\windowsphone\TankManager.wp7\TankManager\obj\Debug\Views\EinstellungenView.g.cs
+D:\Philipp\Software-Engineering\de.efsdev\windowsphone\TankManager.wp7\TankManager\obj\Debug\Views\FahrzeugAddView.g.cs
+D:\Philipp\Software-Engineering\de.efsdev\windowsphone\TankManager.wp7\TankManager\obj\Debug\Views\FahrzeugEditView.g.cs
+D:\Philipp\Software-Engineering\de.efsdev\windowsphone\TankManager.wp7\TankManager\obj\Debug\Views\GraphicalAnalysisView.g.cs
+D:\Philipp\Software-Engineering\de.efsdev\windowsphone\TankManager.wp7\TankManager\obj\Debug\Views\HelpView.g.cs
+D:\Philipp\Software-Engineering\de.efsdev\windowsphone\TankManager.wp7\TankManager\obj\Debug\Views\InfoView.g.cs
+D:\Philipp\Software-Engineering\de.efsdev\windowsphone\TankManager.wp7\TankManager\obj\Debug\Views\TankbuchView.g.cs
+D:\Philipp\Software-Engineering\de.efsdev\windowsphone\TankManager.wp7\TankManager\obj\Debug\Views\TankenAddPage.g.cs
+D:\Philipp\Software-Engineering\de.efsdev\windowsphone\TankManager.wp7\TankManager\obj\Debug\Views\TankenAddView.g.cs
+D:\Philipp\Software-Engineering\de.efsdev\windowsphone\TankManager.wp7\TankManager\obj\Debug\Views\TankenEditView.g.cs
+D:\Philipp\Software-Engineering\de.efsdev\windowsphone\TankManager.wp7\TankManager\obj\Debug\Views\TanktabelleView.g.cs
+D:\Philipp\Software-Engineering\de.efsdev\windowsphone\TankManager.wp7\TankManager\obj\Debug\TankManager.g.resources
+D:\Philipp\Software-Engineering\de.efsdev\windowsphone\TankManager.wp7\TankManager\obj\Debug\TankManager.Lokalisierung.Translation.resources
+D:\Philipp\Software-Engineering\de.efsdev\windowsphone\TankManager.wp7\TankManager\obj\Debug\TankManager.csproj.GenerateResource.Cache

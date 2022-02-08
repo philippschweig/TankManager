@@ -1,0 +1,7 @@
+D:\Philipp\Software-Engineering\de.efsdev\crossplatform\EFSresources\EFSwp7.wp7\EFSmath\Bin\Release\EFSmath.dll
+D:\Philipp\Software-Engineering\de.efsdev\crossplatform\EFSresources\EFSwp7.wp7\EFSmath\Bin\Release\EFSmath.pdb
+D:\Philipp\Software-Engineering\de.efsdev\crossplatform\EFSresources\EFSwp7.wp7\EFSmath\Bin\Release\EFStranslation.dll
+D:\Philipp\Software-Engineering\de.efsdev\crossplatform\EFSresources\EFSwp7.wp7\EFSmath\Bin\Release\EFStranslation.pdb
+D:\Philipp\Software-Engineering\de.efsdev\crossplatform\EFSresources\EFSwp7.wp7\EFSmath\obj\Release\EFSmath.csprojResolveAssemblyReference.cache
+D:\Philipp\Software-Engineering\de.efsdev\crossplatform\EFSresources\EFSwp7.wp7\EFSmath\obj\Release\EFSmath.dll
+D:\Philipp\Software-Engineering\de.efsdev\crossplatform\EFSresources\EFSwp7.wp7\EFSmath\obj\Release\EFSmath.pdb
