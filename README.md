@@ -2,7 +2,13 @@
 
 # TankManager for Windows Phone 7
 
-[GitLab repository (official)](https://gitlab.com/philipp.schweig/TankManager) | [GitHub repository (mirror)](https://github.com/philippschweig/TankManager)
+<a href="https://gitlab.com/philipp.schweig/TankManager">
+<img height="16" src="https://gitlab-org.gitlab.io/gitlab-svgs/favicon.ico"> GitLab repository (official)
+<a/>
+|
+<a href="https://github.com/philippschweig/TankManager">
+<img height="16" src="https://github.githubassets.com/favicons/favicon.svg"> GitHub repository (mirror)
+<a/>
 
 TankManager was an application for the mobile operating system Microsoft Windows Phone 7 for calculating the consumption of road vehicles.
 
