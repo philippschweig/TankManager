@@ -9,6 +9,7 @@
 <a href="https://github.com/philippschweig/TankManager">
 <img height="16" src="https://github.githubassets.com/favicons/favicon.svg"> GitHub repository (mirror)
 <a/>
+<br/><br/>
 
 TankManager was an application for the mobile operating system Microsoft Windows Phone 7 for calculating the consumption of road vehicles.
 
