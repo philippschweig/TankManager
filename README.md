@@ -21,3 +21,15 @@ Because the operating system was discontinued, this application is also disconti
 
 > The source code does not compile currently!
 
+## Screenshots
+
+<img src="screenshots/01-main-overview.jpeg" width="150">
+<img src="screenshots/01-main-newest.jpeg" width="150">
+<img src="screenshots/01-main-analysis.jpeg" width="150">
+
+<img src="screenshots/02-add.jpeg" width="150">
+<img src="screenshots/02-edit.jpeg" width="150">
+
+<img src="screenshots/03-analysis.jpeg" width="150">
+<img src="screenshots/04-vehicles.jpeg" width="150">
+<img src="screenshots/05-backup-restore.jpeg" width="150">
